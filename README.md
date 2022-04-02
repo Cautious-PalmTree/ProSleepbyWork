@@ -1,6 +1,6 @@
 # EXAMPLE GROUP PROJECT README
 
-# TUNIN
+# ProSleepbyWork
 
 ## Table of Contents
 1. [Overview](#Overview)
@@ -10,22 +10,22 @@
 
 ## Overview
 ### Description
-Tracks what music an individual listens to, and pairs them with others based on that music. Could be potentially used as a dating app, or just meeting new friends with similar music tastes.
+Shows real estate available but narrowed down from company location radius. The goal is to be able to show comparisons of different housing metros and jobs available.
 
 ### App Evaluation
-- **Category:** Social Networking / Music
-- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however mobile version could potentially have more features.
-- **Story:** Analyzes users music choices, and connects them to other users with similar choices. The user can then decide to message this person and befriend them if wanted.
-- **Market:** Any individual could choose to use this app, and to keep it a safe environment, people would be organized into age groups.
-- **Habit:** This app could be used as often or unoften as the user wanted depending on how deep their social life is, and what exactly they're looking for.
-- **Scope:** First we would start with pairing people based on music taste, then perhaps this could evolve into a music sharing application as well to broaden its usage. Large potential for use with spotify, apple music, or other music streaming applications.
+- **Category:** Business/Lifestyle
+- **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer. Functionality wouldn't be limited to mobile devices.
+- **Story:** Analyzes realestate available around company office locations
+- **Market:** Users that are open to relocating for work and looking for best ROI for their career choice. This will streamline the process of looking for jobs and living in large metro areas.
+- **Habit:** This app can be used when users are looking for a new job, new real estate to buy or rent or want to compare cost of living difference choices. This has an ability to thrive with the phenomenon of "Zillow Addiction" 
+- **Scope:** First we would build a zillow type application but with searching company locations and looking at real estate within the radius of the chosen location. Could build future functionality focused torwards real estate or job postings.
 
 ## Product Spec
 ### 1. User Stories (Required and Optional)
 
 **Required Must-have Stories**
 
-* User logs in to access previous chats and preference settings
+* User logs in track and monitor personal peferences 
 * User picks what their favorite artist/genre/etc. (Think Spotify interface)
 * Matches have a chat window to get to know each other, with the ability to skip music and unmatch (Tinder Style).
 * Profile pages for each user
