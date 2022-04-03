@@ -1,4 +1,4 @@
-# EXAMPLE GROUP PROJECT README
+# ProSleepbyWork
 
 # ProSleepbyWork
 
@@ -25,10 +25,10 @@ Shows real estate available but narrowed down from company location radius. The 
 
 **Required Must-have Stories**
 
-* User logs in track and monitor personal peferences 
-* User picks what their favorite artist/genre/etc. (Think Spotify interface)
+* App shows a map similar to zillow
+* User chooses which company location they need to find a place to live.
 * Matches have a chat window to get to know each other, with the ability to skip music and unmatch (Tinder Style).
-* Profile pages for each user
+* Profile pages of top companys and their metros
 * Settings (Accesibility, Notification, General, etc.)
 
 **Optional Nice-to-have Stories**
