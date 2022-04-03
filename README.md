@@ -26,30 +26,25 @@ Shows real estate available but narrowed down from company location radius. The 
 
 * App shows a map similar to zillow
 * User chooses which company location they need to find a place to live.
-* Matches have a chat window to get to know each other, with the ability to skip music and unmatch (Tinder Style).
-* Profile pages of top companys and their metros
+* Stream list of real estate available
 * Settings (Accesibility, Notification, General, etc.)
 
 **Optional Nice-to-have Stories**
 
-* Log of past songs/people with album art covers matching
-* Page of most played songs (i.e. songs that most users are connecting through)
-* Profile Add-On: Top music choices, etc.
-* Optional Shuffle Button (i.e. random encounter/random song)
-* Listening/Encounter Queue
+* Comparison by metro calculator
+* Profile pages of top companys and their metros
+* Sign in & Registration 
+* 
 
 ### 2. Screen Archetypes
 
 * Login 
 * Register - User signs up or logs into their account
-   * Upon Download/Reopening of the application, the user is prompted to log in to gain access to their profile information to be properly matched with another person. 
+   * Not required to signin 
    * ...
-* Messaging Screen - Chat for users to communicate (direct 1-on-1)
-   * Upon selecting music choice users matched and message screen opens
-* Profile Screen 
-   * Allows user to upload a photo and fill in information that is interesting to them and others
-* Song Selection Screen.
-   * Allows user to be able to choose their desired song, artist, genre of preference and begin listening and interacting with others.
+* Map Screen - Main Search Page
+* Stream List Page 
+* Company List Page
 * Settings Screen
    * Lets people change language, and app notification settings.
 
@@ -57,13 +52,14 @@ Shows real estate available but narrowed down from company location radius. The 
 
 **Tab Navigation** (Tab to Screen)
 
-* Music selection
-* Profile
+* Map & Search Page
+* Company list page
+* Stream Real Estate Page
 * Settings
 
 Optional:
-* Music/Encounter Queue
-* Discover (Top Choices)
+* Comparison calculator
+* Profile/Registration page 
 
 **Flow Navigation** (Screen to Screen)
 * Forced Log-in -> Account creation if no log in is available
