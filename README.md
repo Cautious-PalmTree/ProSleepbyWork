@@ -62,19 +62,17 @@ Optional:
 * Profile/Registration page 
 
 **Flow Navigation** (Screen to Screen)
-* Forced Log-in -> Account creation if no log in is available
-* Music Selection (Or Queue if Optional) -> Jumps to Chat
+* Registration & LoginPage -> Option to login or skip
+* Map and search page -> pull up list
 * Profile -> Text field to be modified. 
-* Settings -> Toggle settings
+* Settings -> Toggle settings 
 
 ## Wireframes
-<img src="https://i.imgur.com/9CrjH1K.jpg" width=800><br>
 
-### [BONUS] Digital Wireframes & Mockups
 <img src="https://i.imgur.com/lYHn37F.jpg" height=200>
 
-### [BONUS] Interactive Prototype
-<img src="https://i.imgur.com/AiKfE5g.gif" width=200>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYORzodKjNz1Du4f5Ovknjq%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+
 
 ## Schema 
 ### Models
