@@ -88,7 +88,7 @@ Optional:
 #### List of network requests by screen
    - Home Feed Screen
       - (Read/GET) Query all homes off zillow
-         ```swift
+```
 {
   "status": "success",
   "errors": [],
@@ -112,7 +112,7 @@ Optional:
     }
   ]
 }
-         ```
+```
 
    - Profile Screen
       - (Read/GET) Query homes in user object
