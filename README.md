@@ -117,3 +117,4 @@ Optional:
    - Profile Screen
       - (Read/GET) Query homes in user object
       - (Update/PUT) Update user profile image
+
