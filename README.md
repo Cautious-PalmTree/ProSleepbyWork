@@ -75,64 +75,45 @@ Optional:
 
 ## Schema 
 ### Models
-#### Post
-
+#### Get Listing Calls
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
-   | updatedAt     | DateTime | date when post is last updated (default field) |
+   | accessToken   | String   |Used to authenticate the request. |
+   | clientId      | String   | Used to authenticate the request |
+   | apiKey        | String   | Used to authenticate the request |
+   | startZGListingID | String   | The starting point for your listings. Used for paging purposes.  |
+   | limit | intege   | The number of records in your response.  Max is 100. |
+   | 
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen
-      - (Read/GET) Query all posts where user is author
+      - (Read/GET) Query all homes off zillow
          ```swift
-         let query = PFQuery(className:"Post")
-         query.whereKey("author", equalTo: currentUser)
-         query.order(byDescending: "createdAt")
-         query.findObjectsInBackground { (posts: [PFObject]?, error: Error?) in
-            if let error = error { 
-               print(error.localizedDescription)
-            } else if let posts = posts {
-               print("Successfully retrieved \(posts.count) posts.")
-           // TODO: Do something with posts...
-            }
-         }
+{
+  "status": "success",
+  "errors": [],
+  "payload": [
+    {
+      "zgListingId": "5163x5rhuybug",
+      "listingAddress": {
+        "state": "IN",
+        "city": "Santa Claus",
+        "zip": "47579",
+        "street": "931 W Rudolph Ln",
+        "unit": ""
+      },
+      "listingEmail": "email@example.com",
+      "listingName": "",
+      "listingPhone": "1234567890",
+      "listingStartDate": "2018-12-15T00:04:49.891Z",
+      "zillowUrl": "",
+      "hotpadsUrl": "",
+      "truliaUrl": ""
+    }
+  ]
+}
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
-   - Create Post Screen
-      - (Create/POST) Create a new post object
+
    - Profile Screen
-      - (Read/GET) Query logged in user object
+      - (Read/GET) Query homes in user object
       - (Update/PUT) Update user profile image
-#### [OPTIONAL:] Existing API Endpoints
-##### An API Of Ice And Fire
-- Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /characters | get all characters
-    `GET`    | /characters/?name=name | return specific character by name
-    `GET`    | /houses   | get all houses
-    `GET`    | /houses/?name=name | return specific house by name
-
-##### Game of Thrones API
-- Base URL - [https://api.got.show/api](https://api.got.show/api)
-
-   HTTP Verb | Endpoint | Description
-   ----------|----------|------------
-    `GET`    | /cities | gets all cities
-    `GET`    | /cities/byId/:id | gets specific city by :id
-    `GET`    | /continents | gets all continents
-    `GET`    | /continents/byId/:id | gets specific continent by :id
-    `GET`    | /regions | gets all regions
-    `GET`    | /regions/byId/:id | gets specific region by :id
-    `GET`    | /characters/paths/:name | gets a character's path with a given name
